@@ -1,3 +1,8 @@
+dist:
+  - clean:dist
+  - sass:dist
+  - copy:dist
+
 server:
   - clean:server
   - browserSync:server
@@ -6,6 +11,10 @@ server:
 
 serve:
   - server
+
+deploy:
+  - dist
+  - buildcontrol
 
 default:
   - server
