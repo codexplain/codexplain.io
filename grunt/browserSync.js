@@ -2,7 +2,10 @@ module.exports = {
   server: {
     options: {
       server: {
-        baseDir: './client',
+        baseDir: [
+          './client',
+          './tmp',
+        ],
       },
     },
   },

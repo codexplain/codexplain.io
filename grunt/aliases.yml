@@ -1,5 +1,6 @@
 server:
   - browserSync:server
+  - sass:server
 
 serve:
   - server
