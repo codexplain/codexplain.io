@@ -1,6 +1,8 @@
 server:
+  - clean:server
   - browserSync:server
   - sass:server
+  - watch
 
 serve:
   - server
