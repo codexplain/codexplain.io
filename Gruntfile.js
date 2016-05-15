@@ -1,17 +1,9 @@
-module.exports = function(grunt) {
-  grunt.initConfig({
-    browserSync: {
-      server: {
-        options: {
-          server: {
-            baseUrl: './'
-          }
-        }
-      }
-    }
+module.exports = function (grunt) {
+  // Time how long tasks take. Can help when optimizing build times
+  require('time-grunt')(grunt);
+
+  // Automatically load required grunt tasks
+  require('load-grunt-config')(grunt, {
+    init: true,
   });
-
-  grunt.loadNpmTasks('grunt-browser-sync');
-
-  grunt.registerTask('default', ['browserSync']);
 };

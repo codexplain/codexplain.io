@@ -1,0 +1,8 @@
+server:
+  - browserSync:server
+
+serve:
+  - server
+
+default:
+  - server
